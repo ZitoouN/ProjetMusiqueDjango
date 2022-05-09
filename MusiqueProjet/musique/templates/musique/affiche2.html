@@ -1,0 +1,13 @@
+{% extends "musique/main.html" %}
+{% block title %}
+Affichage des Musique
+{% endblock %}
+
+{% block content %}
+
+<h2>Informations sur l'Album concerné crée :</h2>
+
+<p>
+    {{album}} crée le {{album.date}} par {{artiste.date}}
+</p>
+{% endblock %}

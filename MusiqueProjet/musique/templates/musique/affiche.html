@@ -1,0 +1,17 @@
+{% extends "musique/main.html" %}
+{% block title %}
+Affichage des Musique
+{% endblock %}
+
+{% block content %}
+
+<h2>Informations sur l'Album concerné crée :</h2>
+
+<p>
+    {{musique}} paru le {{musique.date_parution}}
+</p>
+
+<p>
+    {{musique.commentaire}}
+</p>
+{% endblock %}

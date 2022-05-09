@@ -1,0 +1,17 @@
+{% extends "musique/main.html" %}
+{% block title %}
+Affichage des Musique
+{% endblock %}
+{% block content %}
+
+<h1>Saisir les informations suivantes afin de céer une musique :</h1>
+  {% if id is not None %}
+    <form method="post" action="/musique/updatetraitement2/{{id}}/">
+   {% else %}
+
+   {% endif %}
+  {% csrf_token %}
+  {{form.as_ul}}
+  <input type="submit" value="save"/>
+    </form>
+{% endblock %}

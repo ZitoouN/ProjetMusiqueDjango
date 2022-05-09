@@ -1,0 +1,15 @@
+{% extends "musique/main.html" %}
+{% block title %}
+Affichage des Musique
+{% endblock %}
+
+{% block content %}
+
+<h2> Liste des musiques crée :</h2>
+
+<ol>
+    {% for m in liste %}
+        <li> {{m}} <a href="/musique/affiche/{{m.id}}/">affiche</a> <a href="/musique/update/{{m.id}}/">update</a> <a href="/musique/delete/{{m.id}}/">delete</a> </li>
+    {% endfor %}
+</ol>
+{% endblock %}

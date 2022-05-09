@@ -1,0 +1,17 @@
+{% extends "musique/main.html" %}
+{% block title %}
+Affichage des Musique
+{% endblock %}
+
+{% block content %}
+  <h1>Saisir les informations suivantes afin de céer un album :</h1>
+  {% if id != '' %}
+    <form method="post" action="/musique/traitement2/">
+   {% else %}
+   {% endif %}
+  {% csrf_token %}
+  {{form.as_ul}}
+  <input type="submit" value="save"/>
+
+    </form>
+{% endblock %}
